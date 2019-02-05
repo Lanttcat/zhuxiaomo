@@ -1,10 +1,10 @@
-import * as React from 'react';
-import styled from 'styled-components';
+import * as React from "react";
+import styled from "styled-components";
 
 const Button = styled.button`
-  color: ${props => props.theme.fg};
-  border: 2px solid ${props => props.theme.fg};
-  background: ${props => props.theme.bg};
+  color: ${(props) => props.theme.fg};
+  border: 2px solid ${(props) => props.theme.fg};
+  background: ${(props) => props.theme.bg};
 
   font-size: 1em;
   margin: 1em;
@@ -12,7 +12,7 @@ const Button = styled.button`
   border-radius: 3px;
 `;
 
-class Input extends React.Component{
+class Input extends React.Component {
 
 }
 
