@@ -1,6 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
 
+const InputUI = styled.div`
+  border: none;
+  input {
+    border: 1px solid rgb(200, 200, 200);
+  }
+`;
+
 const Button = styled.button`
   color: ${(props) => props.theme.fg};
   border: 2px solid ${(props) => props.theme.fg};
@@ -12,8 +19,19 @@ const Button = styled.button`
   border-radius: 3px;
 `;
 
-class Input extends React.Component {
+interface IProp {
+  type: string; // enum
+}
 
+class Input extends React.Component<IProp> {
+  public render(): React.ReactNode {
+    const { type } = this.props;
+    return (
+      <InputUI>
+        <input type={type} />
+      </InputUI>
+    );
+  }
 }
 
 export default Input;
