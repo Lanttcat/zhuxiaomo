@@ -1,1 +1,9 @@
+body, input, textarea {
+  font-family: "PingFangSC-Light",sans-serif;
+}
 
+.main-page {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
