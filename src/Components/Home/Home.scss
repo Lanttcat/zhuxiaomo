@@ -1,0 +1,27 @@
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 500px;
+
+  .search {
+    flex-basis: 780px;
+    flex-grow: 3;
+    flex-shrink: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .album {
+    flex-basis: 400px;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  .nav {
+    flex-basis: 100px;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+}

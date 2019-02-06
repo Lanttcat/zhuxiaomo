@@ -1,10 +1,14 @@
-import * as React from "react";
-import styled from "styled-components";
+import * as React from 'react';
+import styled from 'styled-components';
 
 const InputUI = styled.div`
   border: none;
   input {
+    padding: 6px 10px;
     border: 1px solid rgb(200, 200, 200);
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
   }
 `;
 
