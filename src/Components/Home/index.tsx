@@ -6,6 +6,7 @@ import Background from '../../UI/Background';
 import logo from '../../logo.svg';
 // @ts-ignore
 import style from './Home.scss';
+import SideBar from "../SideBar";
 
 const cx = classnames.bind(style);
 
@@ -35,6 +36,12 @@ const images = [
 
 const testUrl = 'https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/c194c275842465.5c587b066efa9.jpg';
 
+const navs = [
+  {name: '主页', url: ''},
+  {name: '文章', url: ''},
+  {name: '关于我', url: ''},
+];
+
 class Home extends React.Component {
   public render(): React.ReactNode {
     return (
@@ -47,7 +54,7 @@ class Home extends React.Component {
             <Input type={'text'} size={'780px'} icon={'search'} placeholder={'Search'}/>
           </div>
           <nav className={cx('nav')}>
-            按钮
+            <SideBar navs={navs}/>
           </nav>
         </main>
       </Background>

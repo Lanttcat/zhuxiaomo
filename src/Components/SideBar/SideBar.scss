@@ -1,0 +1,14 @@
+.home-side {
+  padding: 10px;
+  box-sizing: border-box;
+
+  .item {
+    color: #ffffff;
+    margin: 20px 10px;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(200, 200, 200);
+    }
+  }
+}
