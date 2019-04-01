@@ -11,6 +11,20 @@
     flex-shrink: 1;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+
+    .search-box {
+      margin: 3rem 0;
+    }
+
+    .search-link {
+      color: white;
+    }
+
+    .search-intro {
+      color: white;
+      margin-bottom: 12rem;
+    }
   }
 
   .album {
