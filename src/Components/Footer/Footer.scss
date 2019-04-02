@@ -1,0 +1,9 @@
+.footer {
+  padding: 2rem 5rem;
+  margin-top: 1000px;
+  background: darkgrey;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 25% 100px auto;
+  justify-items: center;
+}
