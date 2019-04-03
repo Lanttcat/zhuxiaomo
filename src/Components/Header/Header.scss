@@ -1,4 +1,15 @@
-.header {
+.header-basic {
   height: 72px;
   background: rebeccapurple;
 }
+
+.header-shrink {
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+  background: aquamarine;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+}
+

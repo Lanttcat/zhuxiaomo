@@ -27,22 +27,23 @@ class Header extends React.Component<{}, IOwnState>{
     let offsetTop = this.headerRef.current.offsetTop;
     console.log(scrollTop, offsetTop);
     if (scrollTop > 72) {
+      this.setState({isScrollOver: true});
       window.removeEventListener('scroll', this.handleScroll);
     }
   };
 
   render(): React.ReactNode {
     return (
-      <header ref={this.headerRef} className={cx('header')}>
+      <header ref={this.headerRef}>
         {
           this.state.isScrollOver &&
-          <div>
+          <div className={cx('header-shrink')}>
             2
           </div>
         }
         {
           !this.state.isScrollOver &&
-          <div>
+          <div className={cx('header-basic')}>
             this is header 1
           </div>
         }
