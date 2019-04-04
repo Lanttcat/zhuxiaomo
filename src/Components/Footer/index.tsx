@@ -11,6 +11,7 @@ class Footer extends React.PureComponent{
         <div className="item item-1">Yixing</div>
         <div className="item item-1">1</div>
         <div className="item item-2">1</div>
+        <div className="item item-2">About me</div>
       </footer>
     );
   }
